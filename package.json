@@ -2,8 +2,8 @@
   "name": "smart-recipe-generator",
   "version": "0.1.0",
   "scripts": {
-    "build": "cd client && npm run build",
-    "start": "cd server && npm start",
+    "build": "npm run install-client && cd client && npm run build",
+    "start": "npm run install-server && cd server && npm start",
     "install-client": "cd client && npm install",
     "install-server": "cd server && npm install",
     "postinstall": "npm run install-client && npm run install-server"
@@ -30,4 +30,3 @@
     "vite": "^4.3.0"
   }
 }
-
